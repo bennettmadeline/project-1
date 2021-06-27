@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 5px;
+
+}
+
+/* --- Elements --- */
+
+body, html {
+	margin: 0;
+	padding: 0;
+	border:  none;
+}
+
+header {
+	background-color: #d1ede3;
+	width:  100%;
+	padding: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border:  none;
+	display: flex;
+	justify-content: space-around;
+}
+
+section {
+	padding: 0;
+}
+
+nav {
+	padding-top: 10px;
+} 
+
+ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	padding-top: 10px;
+}
+
+li a {
+	font-family: 'Raleway';
+	padding-left: 12px;
+	padding-right: 12px;
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+li a:hover {
+	text-decoration: #51b346 underline;
+}
+
+h1 {
+	font-family: 'Lora';
+	font-size: 30px;
+	color: #2c2f38;
+	width: 300px;
+	height: auto;
+	line-height: 2.0;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+h3, h4 {
+	font-family: 'Raleway';
+	font-weight: normal;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+div {
+	padding: 10px;
+	margin: 10px;
+}
+
+p {
+	font-family: monospace;
+}
+
+button {
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 15px;
+	padding: 1px;
+	margin-top: 5px;
+	margin-left: 6px;
+	height: 28px;
+}
+
+button:hover {
+	background-color: black;
+	color: white;
+
+}
+
+/* --- Classes --- */
+
+.top {
+	background-color: #faf9af;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.middle {
+	background-color: #ffebc7 ;
+	border-top: dashed #51b346;
+	display: flex;
+	flex-direction: row;
+}
+
+.middle-left {
+	width: 65%;
+}
+
+.middle-right {
+	width: 30%;
+}
+
+.special {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.quartet {
+	width: 225px;
+}
+
+
+/* --- IDs --- */
+
+#logo {
+	width: 80px;
+	height: 80px;
+	padding: 0;
+	transform: rotate(-90deg);
+}
+
+#headshot {
+	max-width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+#last {
+	margin: 5px;
+	margin-left: 15px;
+	padding: 10px;
+	width: 15em;
+	text-align: left;
+}
+
+
+/* --- Media Queries --- */
+
+@media only screen and (max-width: 768px) {
+	/* For mobile phones */
+	
+	[class*="col-"] {
+		width:  100%;
+		display: inline-flex;
+		flex-wrap: wrap;
+	}
+
+	*:not(img, ul, button) {
+		width: 100%;
+	}
+
+}
+
+
+
+
